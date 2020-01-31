@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import mqttIconURL from './mqtt/mqtt.png';
+import mqttInsetIconURL from './mqtt/mqtt-small.svg';
+
 export default [
     {
         name: (
@@ -317,5 +320,20 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'MQTT',
+        extensionId: 'mqtt',
+        iconURL: mqttIconURL,
+        insetIconURL: mqttInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="MQTT extension using paho library"
+                description="MQTT extension using paho library"
+                id="gui.extension.mqtt.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
     }
 ];
